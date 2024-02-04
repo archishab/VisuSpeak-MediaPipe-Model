@@ -95,6 +95,7 @@
 
                         // Dispatch the event to notify the change in Local Storage
                         window.dispatchEvent(new Event("storage"));
+                        console.log('New gesture detected:', localStorage.getItem("gestureLabel"));
 
                         window.addEventListener('storage', function(event) {
                             if (event.key === 'gestureLabel') {
