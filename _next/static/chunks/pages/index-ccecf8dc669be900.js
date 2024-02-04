@@ -89,12 +89,7 @@
                             localStorage.getItem("gestureLabel")
                           ),
                           window.dispatchEvent(new Event('storage')),
-                          window.addEventListener('storage', function(event) {
-                            if (event.key === 'gestureLabel') {
-                              console.log('New gesture added:', event.newValue);
-                              // Handle the new gesture label here
-                            }
-                          });
+                          window.parent.postMessage({ type: 'GESTURE', label: p.Z.keypointClassifierLabels[y.current[k]] }, '*');
                         var b = E.map(function (n) {
                             return n.x;
                           }),
