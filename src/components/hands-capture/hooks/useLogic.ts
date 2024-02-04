@@ -9,8 +9,8 @@ import { Hands, HAND_CONNECTIONS, Results, Landmark } from '@mediapipe/hands';
 import useKeyPointClassifier from './useKeyPointClassifier';
 import CONFIGS from '../../../../constants';
 
-const maxVideoWidth = 960;
-const maxVideoHeight = 540;
+const maxVideoWidth = 600;
+const maxVideoHeight = 400;
 
 function useLogic() {
   const videoElement = useRef<HTMLVideoElement>(null);
