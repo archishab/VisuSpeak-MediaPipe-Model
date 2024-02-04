@@ -80,7 +80,7 @@
                         v(E, n.image).then(function (n) {
                           return (y.current[k] = n);
                         }),
-                          window.parent.postMessage(
+                          console.log(
                             p.Z.keypointClassifierLabels[y.current[k]]
                           );
                         var b = E.map(function (n) {
