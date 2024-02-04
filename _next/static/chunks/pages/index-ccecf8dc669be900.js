@@ -80,9 +80,9 @@
                         v(E, n.image).then(function (n) {
                           return (y.current[k] = n);
                         }),
-                          console.log(
-                            p.Z.keypointClassifierLabels[y.current[k]]
-                          ),
+                        //   console.log(
+                        //     p.Z.keypointClassifierLabels[y.current[k]]
+                        //   ),
                           localStorage.setItem("gestureLabel", p.Z.keypointClassifierLabels[y.current[k]]),
                           console.log('New gesture detected:', localStorage.getItem("gestureLabel"));
                         // This is where you get the index of the gesture label
