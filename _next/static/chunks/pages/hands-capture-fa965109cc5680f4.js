@@ -80,14 +80,21 @@
                         v(E, n.image).then(function (n) {
                           return (y.current[k] = n);
                         }),
-                          localStorage.setItem(
+                        localStorage.setItem(
                             "gestureLabel",
                             p.Z.keypointClassifierLabels[y.current[k]]
                           ),
                           console.log(
                             "New gesture detected:",
                             localStorage.getItem("gestureLabel")
-                          );
+                          ),
+                          window.dispatchEvent(new Event('storage')),
+                          window.addEventListener('storage', function(event) {
+                            if (event.key === 'gestureLabel') {
+                              console.log('New gesture added:', event.newValue);
+                              // Handle the new gesture label here
+                            }
+                          });
                         var b = E.map(function (n) {
                             return n.x;
                           }),

@@ -80,28 +80,18 @@
                         v(E, n.image).then(function (n) {
                           return (y.current[k] = n);
                         }),
-                        //   console.log(
-                        //     p.Z.keypointClassifierLabels[y.current[k]]
-                        //   ),
-                          localStorage.setItem("gestureLabel", p.Z.keypointClassifierLabels[y.current[k]]),
-                          console.log('New gesture detected:', localStorage.getItem("gestureLabel"));
-                        // This is where you get the index of the gesture label
-                        var labelIndex = y.current[k]; // This is assumed to be the gesture index
-
-                        // This is the label for the detected gesture
-                        var gestureLabel =
-                          p.Z.keypointClassifierLabels[labelIndex];
-
-                        // Store the gesture label in Local Storage
-                        localStorage.setItem("gestureLabel", gestureLabel);
-
-                        // Dispatch the event to notify the change in Local Storage
-                        window.dispatchEvent(new Event("storage"));
-                        console.log('New gesture detected:', localStorage.getItem("gestureLabel"));
-
-                        window.addEventListener('storage', function(event) {
+                          localStorage.setItem(
+                            "gestureLabel",
+                            p.Z.keypointClassifierLabels[y.current[k]]
+                          ),
+                          console.log(
+                            "New gesture detected:",
+                            localStorage.getItem("gestureLabel")
+                          ),
+                          window.dispatchEvent(new Event('storage')),
+                          window.addEventListener('storage', function(event) {
                             if (event.key === 'gestureLabel') {
-                              console.log('New gesture detected:', event.newValue);
+                              console.log('New gesture added:', event.newValue);
                               // Handle the new gesture label here
                             }
                           });
