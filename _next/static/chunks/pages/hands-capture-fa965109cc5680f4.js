@@ -80,8 +80,13 @@
                         v(E, n.image).then(function (n) {
                           return (y.current[k] = n);
                         }),
-                          console.log(
+                          localStorage.setItem(
+                            "gestureLabel",
                             p.Z.keypointClassifierLabels[y.current[k]]
+                          ),
+                          console.log(
+                            "New gesture detected:",
+                            localStorage.getItem("gestureLabel")
                           );
                         var b = E.map(function (n) {
                             return n.x;
