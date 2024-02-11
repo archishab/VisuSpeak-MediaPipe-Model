@@ -9,7 +9,7 @@ The objective is to develop and train an AI model capable of accurately recogniz
 - For the training of hand sign recognition, the dataset employs a keypoint classifiers script, facilitating the classification process.
 - About 20 classifiers are stored to map various coordinates on a hand, enhancing the precision and accuracy of gesture recognition
 
-## Prerequisites 
+## Prerequisites for MediaPipe Model
 ```
 mediapipe 0.8.1
 opencv 34.2 or later
@@ -18,6 +18,13 @@ tf-nightly 2.5.0.dev or later
 scikit-learn 0.23.2 or Later
 matplotlib 3.3.2 or Later
 ```
+## Prerequisites for web application
+```
+react
+nextjs
+yarn
+```
+
 ## Coverting the Model 
 We will be converting the AI model to tensorflow js to make it comptabile for the web
 ```
@@ -27,7 +34,7 @@ tensorflowjs_converter --input_format keras --output_format tfjs_graph_model mod
 ## How to run the program
 Run the program  using the following command:
 ```
-yarn dev 
+yarn build 
 ```
 Then open your local host to access the MediaPipe model 
 
