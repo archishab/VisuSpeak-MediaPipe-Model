@@ -34,8 +34,8 @@
         f = e(7523),
         l = e(9743),
         p = e(1438),
-        h = 960,
-        d = 540;
+        h = 1000,
+        d = 1200;
       t.default = function () {
         var n = (0, c.useRef)(null),
           t = (0, c.useRef)(null),
