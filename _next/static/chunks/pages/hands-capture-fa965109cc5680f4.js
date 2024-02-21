@@ -18,7 +18,7 @@
       });
       var r = "/VisuSpeak-MediaPipe-Model";
       t.Z = {
-        keypointClassifierLabels: ["Hello", "Yes", "No", "Please", "Thank You"],
+        keypointClassifierLabels: ["Hello", "Yes", "No", "Please", "Thank You", "I Love You", "Help", "Sorry", "What", "Where", "Ask", "You", "Good", "Good Bye", "More", "Again", "I", "Your", "They", "We", "Who", "Why", "How", "Name", "My", "Your", "Like", "Don't Like", "Want", "Need", "Have", "Feel", "Look", "Understand", "Friend", "Bad"],
       };
     },
     3587: function (n, t, e) {
