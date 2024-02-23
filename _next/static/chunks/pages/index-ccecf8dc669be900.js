@@ -103,8 +103,8 @@
                           (t.fillStyle = "black"),
                           t.fillRect(
                             h * Math.min.apply(Math, (0, i.Z)(b)) - 10,
-                            d * Math.min.apply(Math, (0, i.Z)(N)) + textHeight,
-                            textSize.width + 500,
+                            d * Math.min.apply(Math, (0, i.Z)(N)) -15,
+                            textSize.width + 100,
                             textHeight + 10
                         ),                
                         (t.fillStyle = "red"),
