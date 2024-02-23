@@ -103,7 +103,7 @@
                           (t.fillStyle = "black"),
                           t.fillRect(
                             h * Math.min.apply(Math, (0, i.Z)(b)) - 10,
-                            d * Math.min.apply(Math, (0, i.Z)(N)) -15,
+                            d * Math.min.apply(Math, (0, i.Z)(N)) - 15 - textHeight,
                             textSize.width + 100,
                             textHeight + 10
                         ),                
