@@ -104,8 +104,7 @@
                             t.fillRect(
                               h * Math.min.apply(Math, (0, i.Z)(b)) - 10,
                               d * Math.min.apply(Math, (0, i.Z)(N)) + textHeight,
-                              (_ = Math).max.apply(_, (0, i.Z)(b)) -
-                                (w = Math).min.apply(w, (0, i.Z)(b)),
+                              textSize + 500,
                               textHeight + 10
                             ),                  
                         (t.fillStyle = "red"),
