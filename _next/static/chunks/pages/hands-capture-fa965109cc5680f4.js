@@ -96,8 +96,8 @@
                           N = E.map(function (n) {
                             return n.y;
                           });
-                        (t.fillStyle = "#ff0000"),
-                          (t.font = "24px serif"),
+                        (t.fillStyle = "#ffffff"),
+                          (t.font = "40px helvetica"),
                           t.fillText(
                             p.Z.keypointClassifierLabels[y.current[k]],
                             h * (e = Math).min.apply(e, (0, i.Z)(b)),
@@ -126,17 +126,17 @@
                               rectId: 13,
                             },
                             {
-                              fillColor: "transparent",
-                              color: "#ff0000",
+                              fillColor: "black",
+                              color: "#ffffff",
                               lineWidth: 1,
                             }
                           ),
                           (0, s.drawConnectors)(t, E, f.HAND_CONNECTIONS, {
-                            color: "#00ffff",
+                            color: "#ffffff",
                             lineWidth: 2,
                           }),
                           (0, s.drawLandmarks)(t, E, {
-                            color: "#ffff29",
+                            color: "#006262",
                             lineWidth: 1,
                           });
                       },
