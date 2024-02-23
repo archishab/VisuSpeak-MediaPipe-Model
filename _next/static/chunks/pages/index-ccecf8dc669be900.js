@@ -95,16 +95,9 @@
                           }),
                           N = E.map(function (n) {
                             return n.y;
-                          });
-                          (t.fillStyle = "black"),
-                          t.fillRect(
-                            h * Math.min.apply(Math, (0, i.Z)(b)) - 10,
-                            d * Math.min.apply(Math, (0, i.Z)(N)) - 40,
-                            (t.measureText(text)).width + 20,
-                            40 + 10
-                        );
-                        (t.fillStyle = "#ffffff"),
-                          (t.font = "40px helvetica"),
+                          });                       
+                        (t.fillStyle = "red"),
+                          (t.font = "bold 40px helvetica"),
                           t.fillText(
                             p.Z.keypointClassifierLabels[y.current[k]],
                             h * (e = Math).min.apply(e, (0, i.Z)(b)),
