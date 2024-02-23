@@ -171,12 +171,12 @@
                         var textHeight = 40;
                         (t.fillStyle = "black"),
                         t.fillRect(
-                          h * Math.min.apply(Math, (0, i.Z)(b)) - 10,
-                          d * Math.min.apply(Math, (0, i.Z)(N)) - textHeight - 20,
+                          h * (e = Math).min.apply(e, (0, i.Z)(b)) - 10,
+                          d * (r = Math).min.apply(r, (0, i.Z)(N)) - textHeight - 20,
                           textSize.width + 100,
                           textHeight + 10
                       ),
-                          (t.fillStyle = "red"),
+                          (t.fillStyle = "white"),
                           (t.font = "bold 50px helvetica"),
                           t.fillText(
                             p.Z.keypointClassifierLabels[y.current[k]],
