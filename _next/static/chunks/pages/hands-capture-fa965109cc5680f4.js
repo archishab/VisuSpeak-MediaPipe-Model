@@ -97,7 +97,7 @@
                             return n.y;
                           });
                         (t.fillStyle = "#ffffff"),
-                          (t.font = "40px helvetica"),
+                          (t.font = "40px serif"),
                           t.fillText(
                             p.Z.keypointClassifierLabels[y.current[k]],
                             h * (e = Math).min.apply(e, (0, i.Z)(b)),
