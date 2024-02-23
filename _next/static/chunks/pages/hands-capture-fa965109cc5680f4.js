@@ -136,7 +136,7 @@
                             lineWidth: 3,
                           }),
                           (0, s.drawLandmarks)(t, E, {
-                            color: "#7d255b",
+                            color: "yellow",
                             lineWidth: 2,
                           });
                       },
