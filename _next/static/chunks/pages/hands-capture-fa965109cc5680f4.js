@@ -173,7 +173,7 @@
                         t.fillRect(
                           h * (e = Math).min.apply(e, (0, i.Z)(b)) - 10,
                           d * (r = Math).min.apply(r, (0, i.Z)(N)) - textHeight - 20,
-                          textSize.width + 100,
+                          (_ = Math).max.apply(_, (0, i.Z)(b)) - (w = Math).min.apply(w, (0, i.Z)(b)),
                           textHeight + 10
                       ),
                           (t.fillStyle = "white"),
