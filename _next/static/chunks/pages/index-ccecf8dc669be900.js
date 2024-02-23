@@ -97,7 +97,8 @@
                             return n.y;
                           });
                         (t.fillStyle = "#ffffff"),
-                          (t.font = "40px serif"),
+                        (t.fillColor = "black"),
+                          (t.font = "40px helvetica"),
                           t.fillText(
                             p.Z.keypointClassifierLabels[y.current[k]],
                             h * (e = Math).min.apply(e, (0, i.Z)(b)),
@@ -126,7 +127,7 @@
                               rectId: 13,
                             },
                             {
-                              fillColor: "black",
+                              fillColor: "transparent",
                               color: "#ffffff",
                               lineWidth: 1,
                             }
