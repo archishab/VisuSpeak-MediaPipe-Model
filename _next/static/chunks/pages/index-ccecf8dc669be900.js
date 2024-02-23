@@ -95,9 +95,20 @@
                           }),
                           N = E.map(function (n) {
                             return n.y;
-                          });                       
+                          });
+                          var textSize = t.measureText(
+                            p.Z.keypointClassifierLabels[y.current[k]]
+                          );
+                          var textHeight = 40;
+                          (t.fillStyle = "black"),
+                            t.fillRect(
+                              h * Math.min.apply(Math, (0, i.Z)(b)) - 10,
+                              d * Math.min.apply(Math, (0, i.Z)(N)) - textHeight,
+                              textSize.width + 20,
+                              textHeight + 10
+                            ),                   
                         (t.fillStyle = "red"),
-                          (t.font = "bold 40px helvetica"),
+                          (t.font = "bold 50px helvetica"),
                           t.fillText(
                             p.Z.keypointClassifierLabels[y.current[k]],
                             h * (e = Math).min.apply(e, (0, i.Z)(b)),

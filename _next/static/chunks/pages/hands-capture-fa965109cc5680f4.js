@@ -18,7 +18,70 @@
       });
       var r = "/VisuSpeak-MediaPipe-Model";
       t.Z = {
-        keypointClassifierLabels: ["Hello", "Yes", "No", "Please", "Thank You", "I Love You", "Help", "Sorry", "What", "Where", "Ask", "You", "Good", "Good Bye", "More", "Again", "I", "Your", "They", "We", "Who", "Why", "How", "Name", "My", "Your", "Like", "Don't Like", "Want", "Need", "Have", "Feel", "Look", "Understand", "Friend", "Bad", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"],
+        keypointClassifierLabels: [
+          "Hello",
+          "Yes",
+          "No",
+          "Please",
+          "Thank You",
+          "I Love You",
+          "Help",
+          "Sorry",
+          "What",
+          "Where",
+          "Ask",
+          "You",
+          "Good",
+          "Good Bye",
+          "More",
+          "Again",
+          "I",
+          "Your",
+          "They",
+          "We",
+          "Who",
+          "Why",
+          "How",
+          "Name",
+          "My",
+          "Your",
+          "Like",
+          "Don't Like",
+          "Want",
+          "Need",
+          "Have",
+          "Feel",
+          "Look",
+          "Understand",
+          "Friend",
+          "Bad",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F",
+          "G",
+          "H",
+          "I",
+          "J",
+          "K",
+          "L",
+          "M",
+          "N",
+          "O",
+          "P",
+          "Q",
+          "R",
+          "S",
+          "T",
+          "U",
+          "V",
+          "W",
+          "X",
+          "Y",
+          "Z",
+        ],
       };
     },
     3587: function (n, t, e) {
@@ -80,7 +143,7 @@
                         v(E, n.image).then(function (n) {
                           return (y.current[k] = n);
                         }),
-                        localStorage.setItem(
+                          localStorage.setItem(
                             "gestureLabel",
                             p.Z.keypointClassifierLabels[y.current[k]]
                           ),
@@ -88,16 +151,33 @@
                             "New gesture detected:",
                             localStorage.getItem("gestureLabel")
                           ),
-                          window.dispatchEvent(new Event('storage')),
-                          window.parent.postMessage({ type: 'GESTURE', label: p.Z.keypointClassifierLabels[y.current[k]] }, '*');
+                          window.dispatchEvent(new Event("storage")),
+                          window.parent.postMessage(
+                            {
+                              type: "GESTURE",
+                              label: p.Z.keypointClassifierLabels[y.current[k]],
+                            },
+                            "*"
+                          );
                         var b = E.map(function (n) {
                             return n.x;
                           }),
                           N = E.map(function (n) {
                             return n.y;
                           });
-                        (t.fillStyle = "red"),
-                          (t.font = "bold 40px helvetica"),
+                        var textSize = t.measureText(
+                          p.Z.keypointClassifierLabels[y.current[k]]
+                        );
+                        var textHeight = 40;
+                        (t.fillStyle = "black"),
+                          t.fillRect(
+                            h * Math.min.apply(Math, (0, i.Z)(b)) - 10,
+                            d * Math.min.apply(Math, (0, i.Z)(N)) - textHeight,
+                            textSize.width + 20,
+                            textHeight + 10
+                          ),
+                          (t.fillStyle = "red"),
+                          (t.font = "bold 50px helvetica"),
                           t.fillText(
                             p.Z.keypointClassifierLabels[y.current[k]],
                             h * (e = Math).min.apply(e, (0, i.Z)(b)),
