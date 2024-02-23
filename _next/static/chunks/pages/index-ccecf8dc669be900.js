@@ -101,12 +101,12 @@
                           );
                           var textHeight = 40;
                           (t.fillStyle = "black"),
-                            t.fillRect(
-                              h * Math.min.apply(Math, (0, i.Z)(b)) - 10,
-                              d * Math.min.apply(Math, (0, i.Z)(N)),
-                              textSize + 500,
-                              textHeight + 10
-                            ),                  
+                          t.fillRect(
+                            h * Math.min.apply(Math, (0, i.Z)(b)) - 10,
+                            d * Math.min.apply(Math, (0, i.Z)(N)) - textHeight,
+                            textSize.width + 20,
+                            textHeight + 10
+                        ),                
                         (t.fillStyle = "red"),
                           (t.font = "bold 50px helvetica"),
                           t.fillText(
